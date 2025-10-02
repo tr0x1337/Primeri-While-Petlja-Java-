@@ -31,13 +31,11 @@ public class WhilePrimer3 {
                 zbir += i;
                 matematickiIzraz += i + (i < n ? " + " : " = ");
                 ++i;
-            }
-        
-        
-        
+            }    
         
         System.out.println("\nZbir brojeva od " + iStart + " do " + n + " je " + zbir + ".");
         System.out.println("Izraz " + matematickiIzraz + zbir);
     
     }
 }
+
