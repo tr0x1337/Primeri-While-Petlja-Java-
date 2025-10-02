@@ -6,23 +6,38 @@ public class WhilePrimer3 {
     public static void main(String[] args) {
         
         Scanner s = new Scanner(System.in);
-        System.out.print("Unesite broj n: ");
+        System.out.print("Unesite broj do kog zelite da se vrsi sabiranje (n): ");
         int n = s.nextInt();
         
-        System.out.println("Uneli ste broj " + n);
+        System.out.println("Uneli ste broj " + n + "\n");
         
-        int i = 1;
+        System.out.print("Unesite od kog broja zelite da zapocnete sabiranje do " + n + " (i): ");
+        int i = s.nextInt();
+        int iStart = i;
         int zbir = 0;
         
-        System.out.println("\n\tPocetna vrednost za zbir je " + zbir + ".\n");
         
-        while(i <= n){
-            System.out.println("Dodaje se " + i + " u zbir, trenutni zbir je " + (zbir + i) + ".");
-            zbir += i;
-            ++i;
+        System.out.println("\n\tPocetna vrednost za zbir je " + zbir + ".\n");
+        String matematickiIzraz = "";
+        
+        
+        if(i > n) {
+            System.out.println("Greska!");
+            return;
         }
         
-        System.out.println("\nZbir brojeva od 1 do " + n + " je " + zbir + ".");
+        while(i <= n){
+                System.out.println("Dodaje se " + i + " u zbir, trenutni zbir je " + (zbir + i) + ".");
+                zbir += i;
+                matematickiIzraz += i + (i < n ? " + " : " = ");
+                ++i;
+            }
+        
+        
+        
+        
+        System.out.println("\nZbir brojeva od " + iStart + " do " + n + " je " + zbir + ".");
+        System.out.println("Izraz " + matematickiIzraz + zbir);
     
     }
 }
