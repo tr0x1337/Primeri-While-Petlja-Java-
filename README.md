@@ -2,8 +2,8 @@
 
 Prosti primeri za ucenje while petlje u Javi :D
 
-#While petelje sluze za ponavljanje radnje dok je uslov tacan
+While petelje sluze za ponavljanje radnje dok je uslov tacan
 
-while(uslov) {
-  // telo petlje
+while(uslov) { <br>
+  // telo petlje <br>
 }
